@@ -1,500 +1,611 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <title>Utkarsh Singh</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="gallary.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
-  <link href='https://fonts.googleapis.com/css?family=Aladin' rel='stylesheet'>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Daily Tuition</title>
 
-  <style>
-    body,html {
-  height: 100%;
-  margin: 0;
-  font-family: 'Lato', sans-serif;
-  line-height: 180%;
-  color: #666;
-  text-align: center;
-   transition: 4s;
-    }
 
-  </style>
-  <script type="text/javascript">
-    $(document).ready(function() {
-          $(".menu-icon").on("click", function(){
-            $("nav ul").toggleClass("showing");
-            });
-      });
+    <!--  Bootstrap css file  -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
 
-    $(window).on("scroll",function(){
-          if($(window).scrollTop()){
-            $('nav').addClass('black');
-          }
-          else{
-               $('nav').removeClass('black');
-          }
-    });
-    </script>
-    <script>
-$(document).ready(function(){
-  $(".menu a, .logo a[href='#myPage'],footer a[href='#myPage']").on('click', function(event) {
-  if (this.hash !== "") {
-    event.preventDefault();
-    var hash = this.hash;
-    $('html, body').animate({
-      scrollTop: $(hash).offset().top
-    }, 1200, function(){
-      window.location.hash = hash;
-      });
-    }
-  });
-})
-</script>
+    <!--  font awesome icons  -->
+    <link rel="stylesheet" href="./css/all.min.css">
+
+
+    <!--  Magnific Popup css file  -->
+    <link rel="stylesheet" href="./vendor/Magnific-Popup/dist/magnific-popup.css">
+
+
+    <!--  Owl-carousel css file  -->
+    <link rel="stylesheet" href="./vendor/owl-carousel/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./vendor/owl-carousel/css/owl.theme.default.min.css">
+
+
+    <!--  custom css file  -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!--  Responsive css file  -->
+    <link rel="stylesheet" href="./css/responsive.css">
+
 </head>
 
+<body>
 
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
- <div class="wrapper">
-    <header>
-         <nav>
-              <div class="menu-icon">
-                  <i class="fa fa-bars fa-2x"></i>
-              </div>
-              <div id="myPage">
-              <div class="logo">
-                 <a href="#myPage"> LOGO</a>
-              </div>
-           
-              <div class="menu">
-                <ul>
-                  <li><a href="#abou">about</a></li>
-                  <li><a href="#timer">Timeline</a></li>
-                  <li><a href="#interest">interest</a></li>
-                  <li><a href="#contact">contact</a></li>
-                </ul>
-              </div>
+
+    <!--  ======================= Start Header Area ============================== -->
+
+    <header class="header_area">
+        <div class="main-menu">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#"><img src="./img/logo.png" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="mr-auto"></div>
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">about</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">pages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">contact</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!--  ======================= End Header Area ============================== -->
+
+    <!--  ======================= Start Main Area ================================ -->
+    <main class="site-main">
+
+
+        <!--  ======================= Start Banner Area =======================  -->
+        <section class="site-banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 site-title">
+                        <h3 class="title-text">Hey</h3>
+                        <h1 class="title-text text-uppercase">I am Akshay</h1>
+                        <h4 class="title-text text-uppercase">Senior Wordpress Developer</h4>
+                        <div class="site-buttons">
+                            <div class="d-flex flex-row flex-wrap">
+                                <button type="button" class="btn button primary-button mr-4 text-uppercase">hire
+                                    me</button>
+                                <button type="button" class="btn button secondary-button text-uppercase">Get cv</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 banner-image">
+                        <img src="./img/banner/banner-image.png" alt="banner-img" class="img-fluid">
+                    </div>
+                </div>
             </div>
-          </nav>
-    </header> 
-  </div>
+        </section>
+        <!--  ======================= End Banner Area =======================  -->
+
+        <!--  ========================= About Area ==========================  -->
+
+        <section class="about-area">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="about-image">
+                            <img src="./img/about-us.png" alt="About us" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 about-title">
+                        <h2 class="text-uppercase pt-5">
+                            <span>Let me</span>
+                            <span>introduce</span>
+                            <span>myself</span>
+                        </h2>
+                        <div class="paragraph py-4 w-75">
+                            <p class="para">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error rerum iure obcaecati vel
+                                possimus officia maiores perferendis ut! Quos, perspiciatis.
+                            </p>
+                            <p class="para">
+                                It is a long established fact that a reader will be distracted by the readable content
+                                of a page when looking at its layout. The point of using Lorem Ipsum is that it has a
+                                more-or-less normal distribution of letters, as opposed to using 'Content here, content
+                                here
+                            </p>
+                        </div>
+                        <button type="button" class="btn button primary-button text-uppercase">Download cv</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--  ========================= End About Area ==========================  -->
+
+        <!--  ======================== Brand Area ==============================  -->
+
+        <section class="brand-area">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-12 col-md-12">
+                        <div class="first-row row">
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="single-brand">
+                                    <img src="./img/brands/logo1.png" alt="Brand-1 ">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="single-brand">
+                                    <img src="./img/brands/logo2.png" alt="Brand-2 ">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="single-brand">
+                                    <img src="./img/brands/logo3.png" alt="Brand-3 ">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="single-brand">
+                                    <img src="./img/brands/logo4.png" alt="Brand-4">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="single-brand">
+                                    <img src="./img/brands/logo5.png" alt="Brand-5 ">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="single-brand">
+                                    <img src="./img/brands/logo6.png" alt="Brand-6">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="single-brand">
+                                    <img src="./img/brands/logo7.png" alt="Brand-7 ">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="single-brand">
+                                    <img src="./img/brands/logo8.png" alt="Brand-8 ">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="single-brand">
+                                    <img src="./img/brands/logo9.png" alt="Brand-9">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-12 col-md-12">
+                        <div class="experience-area">
+                            <div class="d-flex flex-row years-area">
+                                <h2 class="p-3 years">10</h2>
+                                <h2>
+                                    <span>Years</span>
+                                    <span>Experience</span>
+                                    <span>Working</span>
+                                </h2>
+                            </div>
+                            <div class="d-flex flex-row flex-wrap call-area">
+                                <span><i class="fas fa-phone-alt fa-3x px-3"></i></span>
+                                <div class="call-now">
+                                    <a href="#" class="text-uppercase h4 font-roboto">Call Now</a>
+                                    <span class="font-roboto py-2">(+91)-800-555-4986</span>
+                                </div>
+                            </div>
+                            <div class="bg-panel"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--  ======================== End Brand Area ==============================  -->
+
+        <!--  ====================== Start Services Area =============================  -->
+
+        <section class="services-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center services-title">
+                        <h1 class="text-uppercase title-text">Services Offers</h1>
+                        <p class="para">
+                            There are many variations of passages of Lorem Ipsum available, but the majority have
+                            suffered alteration in some form, by injected humour
+                        </p>
+                    </div>
+                </div>
+                <div class="container services-list">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="services">
+                                <div class="sevices-img text-center py-4">
+                                    <img src="./img/services/s1.png" alt="Services-1">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-uppercase font-roboto">Wp developer</h5>
+                                    <p class="card-text text-secondary">
+                                        Some quick example text to build on the card
+                                        title and make up
+                                        the bulk of the card's content.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="services">
+                                <div class="sevices-img text-center py-4">
+                                    <img src="./img/services/s2.png" alt="Services-2">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-uppercase font-roboto">ux/ui desing</h5>
+                                    <p class="card-text text-secondary">
+                                        Some quick example text to build on the card
+                                        title and make up
+                                        the bulk of the card's content.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="services">
+                                <div class="sevices-img text-center py-4">
+                                    <img src="./img/services/s3.png" alt="Services-3">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-uppercase font-roboto">web design</h5>
+                                    <p class="card-text text-secondary">
+                                        Some quick example text to build on the card
+                                        title and make up
+                                        the bulk of the card's content.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="services">
+                                <div class="sevices-img text-center py-4">
+                                    <img src="./img/services/s4.png" alt="Services-4">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-uppercase font-roboto">seo optimize</h5>
+                                    <p class="card-text text-secondary">
+                                        Some quick example text to build on the card
+                                        title and make up
+                                        the bulk of the card's content.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--  ====================== End Services Area =============================  -->
+
+        <!--  ======================= Project Area =============================  -->
+
+        <section class="project-area">
+            <div class="container">
+                <div class="project-title pb-5">
+                    <h1 class="text-uppercase title-h1">Recently Done Project</h1>
+                    <h1 class="text-uppercase title-h1">Quality Work</h1>
+                </div>
+
+                <div class="button-group">
+                    <button type="button" class="active" id="btn1" data-filter="*">All</button>
+                    <button type="button" data-filter=".popular">Popular</button>
+                    <button type="button" data-filter=".latest">Latest</button>
+                    <button type="button" data-filter=".following">Following</button>
+                    <button type="button" data-filter=".upcoming">Upcoming</button>
+                </div>
+
+                <div class="row grid">
+                    <div class="col-lg-4 col-md-6 col-sm-12 element-item latest">
+                        <div class="our-project">
+                            <div class="img">
+                                <a class="test-popup-link" href="./img/portfolio/p1.jpg">
+                                    <img src="./img/portfolio/p1.jpg" alt="portfolio-1" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="title py-4">
+                                <h4 class="text-uppercase">Minimul Desing</h4>
+                                <span class="text-secondary">Latest, Portfolio</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 element-item popular">
+                        <div class="our-project">
+                            <div class="img">
+                                <a class="test-popup-link" href="./img/portfolio/p2.jpg">
+                                    <img src="./img/portfolio/p2.jpg" alt="portfolio-2" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="title py-4">
+                                <h4 class="text-uppercase">Paint Wall</h4>
+                                <span class="text-secondary">Popular, Portfolio</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 element-item popular">
+                        <div class="our-project">
+                            <div class="img">
+                                <a class="test-popup-link" href="./img/portfolio/p3.jpg">
+                                    <img src="./img/portfolio/p3.jpg" alt="portfolio-3" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="title py-4">
+                                <h4 class="text-uppercase">Female light</h4>
+                                <span class="text-secondary">Popular, Portfolio</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 element-item upcoming">
+                        <div class="our-project">
+                            <div class="img">
+                                <a class="test-popup-link" href="./img/portfolio/p4.jpg">
+                                    <img src="./img/portfolio/p4.jpg" alt="portfolio-4" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="title py-4">
+                                <h4 class="text-uppercase">Fourth Air</h4>
+                                <span class="text-secondary">Upcoming, Portfolio</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 element-item upcoming">
+                        <div class="our-project">
+                            <div class="img">
+                                <a class="test-popup-link" href="./img/portfolio/p5.jpg">
+                                    <img src="./img/portfolio/p5.jpg" alt="portfolio-5" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="title py-4">
+                                <h4 class="text-uppercase">Muliple fown</h4>
+                                <span class="text-secondary">Upcoming, Portfolio</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 element-item following">
+                        <div class="our-project">
+                            <div class="img">
+                                <a class="test-popup-link" href="./img/portfolio/p6.jpg">
+                                    <img src="./img/portfolio/p6.jpg" alt="portfolio-6" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="title py-4">
+                                <h4 class="text-uppercase">Together sign</h4>
+                                <span class="text-secondary">Following, Portfolio</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 element-item following">
+                        <div class="our-project">
+                            <div class="img">
+                                <a class="test-popup-link" href="./img/portfolio/p7.jpg">
+                                    <img src="./img/portfolio/p7.jpg" alt="portfolio-7" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="title py-4">
+                                <h4 class="text-uppercase">Green Heaven</h4>
+                                <span class="text-secondary">Following, Portfolio</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 element-item following">
+                        <div class="our-project">
+                            <div class="img">
+                                <a class="test-popup-link" href="./img/portfolio/p8.jpg">
+                                    <img src="./img/portfolio/p8.jpg" alt="portfolio-8" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="title py-4">
+                                <h4 class="text-uppercase">Fly Male</h4>
+                                <span class="text-secondary">Following, Portfolio</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 element-item upcoming">
+                        <div class="our-project">
+                            <div class="img">
+                                <a class="test-popup-link" href="./img/portfolio/p9.jpg">
+                                    <img src="./img/portfolio/p9.jpg" alt="portfolio-9" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="title py-4">
+                                <h4 class="text-uppercase">Camera Lens</h4>
+                                <span class="text-secondary">Upcoming, Portfolio</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--  ======================= End Project Area =============================  -->
+
+        <!--  ======================== About Me Area ==============================  -->
+
+        <section class="about-area">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-12">
+                        <div class="about-title">
+                            <h1 class="text-uppercase title-h1">Client Say about me</h1>
+                            <p class="para">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus, deleniti
+                                recusandae. Esse incidunt rem repellendus ab voluptates maxime? Nemo, numquam!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container carousel py-lg-5">
+                <div class="owl-carousel owl-theme">
+                    <div class="client row">
+                        <div class="col-lg-4 col-md-12 client-img">
+                            <img src="./img/testimonials/t1.jpg" alt="img1" class="img-fluid">
+                        </div>
+                        <div class="col-lg-8 col-md-12 about-client">
+                            <h4 class="text-uppercase">John Martin</h4>
+                            <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem architecto
+                                consequuntur ratione, obcaecati corrupti deserunt.</p>
+                        </div>
+                    </div>
+                    <div class="client row">
+                        <div class="col-lg-4 col-md-12 client-img">
+                            <img src="./img/testimonials/t2.jpg" alt="img2" class="img-fluid">
+                        </div>
+                        <div class="col-lg-8 col-md-12 about-client">
+                            <h4 class="text-uppercase">Mac Hill</h4>
+                            <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem architecto
+                                consequuntur ratione, obcaecati corrupti deserunt.</p>
+                        </div>
+                    </div>
+                    <div class="client row">
+                        <div class="col-lg-4 col-md-12 client-img">
+                            <img src="./img/testimonials/t1.jpg" alt="img1" class="img-fluid">
+                        </div>
+                        <div class="col-lg-8 col-md-12 about-client">
+                            <h4 class="text-uppercase">John Martin</h4>
+                            <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem architecto
+                                consequuntur ratione, obcaecati corrupti deserunt.</p>
+                        </div>
+                    </div>
+                    <div class="client row">
+                        <div class="col-lg-4 col-md-12 client-img">
+                            <img src="./img/testimonials/t2.jpg" alt="img2" class="img-fluid">
+                        </div>
+                        <div class="col-lg-8 col-md-12 about-client">
+                            <h4 class="text-uppercase">Mac Hill</h4>
+                            <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem architecto
+                                consequuntur ratione, obcaecati corrupti deserunt.</p>
+                        </div>
+                    </div>
+                    <div class="client row">
+                        <div class="col-lg-4 col-md-12 client-img">
+                            <img src="./img/testimonials/t1.jpg" alt="img1" class="img-fluid">
+                        </div>
+                        <div class="col-lg-8 col-md-12 about-client">
+                            <h4 class="text-uppercase">John Martin</h4>
+                            <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem architecto
+                                consequuntur ratione, obcaecati corrupti deserunt.</p>
+                        </div>
+                    </div>
+                    <div class="client row">
+                        <div class="col-lg-4 col-md-12 client-img">
+                            <img src="./img/testimonials/t2.jpg" alt="img2" class="img-fluid">
+                        </div>
+                        <div class="col-lg-8 col-md-12 about-client">
+                            <h4 class="text-uppercase">Mac Hill</h4>
+                            <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem architecto
+                                consequuntur ratione, obcaecati corrupti deserunt.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!--  ======================== End About Me Area ==============================  -->
+
+        <!--  ========================== Subscribe me Area ============================  -->
+        <section class="subscribe-us-area">
+            <div class="container subscribe">
+                <div class="row">
+                    <div class="col-lg-12 text-center subscribe-title">
+                        <h4 class="text-uppercase">Get Update From anywhere</h4>
+                        <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam,
+                            consequuntur.</p>
+                    </div>
+                </div>
+                <div class="d-sm-flex justify-content-center">
+                    <form class="w-50">
+                        <div class="row d-flex flex-row flex-wrap">
+                            <div class="col input-textbox">
+                                <input type="text" id="txtemail" class="form-control" placeholder="Email">
+                            </div>
+                            <div class="col">
+                                <div class="btn-submit">
+                                    <button type="submit" class="btn btn-success float-right">Subscribe</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!--  ========================== End Subscribe me Area ============================  -->
 
 
- <div class="parallax1">
-    <div class="heading"
-    >
-     discover
-    </div>
-    <div class="heading2">
-      me
-    </div>
-  </div>
+    </main>
+    <!--  ======================= End Main Area ================================ -->
 
- <section class="there" id="abou">
- 
-    <h1>ABOUT</h1>
-    
-        <div class="row">
-
-    <div class="col-sm-12 col-md-12 col-lg-6">
-
-          <h3 class="prof1">Who's this guy?</h3>
-          <br>
-     <div class="hexagon">
-        <div class="hexagon-inside1">
-          <div class="hexagon-image5">
-          </div>
+    <footer class="footer-area">
+        <div class="container">
+            <div class="">
+                <div class="site-logo text-center py-4">
+                    <a href="#"><img src="./img/logo.png" alt="logo"></a>
+                </div>
+                <div class="social text-center">
+                    <h5 class="text-uppercase">Follow me</h5>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+                <div class="copyrights text-center">
+                    <p class="para">
+                        Copyright ©2019 All rights reserved | This template is made with by
+                        <a href="#"><span style="color: var(--primary-color);">Daily Tuition</span></a>
+                    </p>
+                </div>
+            </div>
         </div>
-      </div>
-
-      <p class="prof" >My name is <span style="color:blue;">Ukarsh Singh</span> and I am a 20 years old boy who wants to be the best developer.I have a great passion for web design and development.I'm always looking for new things to learn,with google as my teacher and code editor as my notebook.Coding is my life,exploring web tecnologies and techniques,developing web stuff.Anything that can help me in expanding my knowledge is always welcomed.My motto in work(as in my life) is to "Take the challenge and make it obvious." </p>
-    </div>
-    
-    <div class="col-sm-12 col-md-12 col-lg-6" >
-      <h3 style="padding-top: 90px; padding-right: 20px;"> My Skills</h3>
-      <br>
-     <div class="container"> 
-      <div class="skills">
-        <h6 class="sub">HTML</h6>
-  <div class="progress" style="height:30px" "background-color:#000 ">
-    <div class=" progress-bar progress-bar-striped progress-bar-animated" style="width:80%" id="htmls">80%</div>
-  </div>
-
-  <h6 class="sub">CSS</h6>
-  <div class="progress" style="height:30px">
-    <div class="progress-bar progress-bar-striped progress-bar-animated" style=" width:65%" id="css">65%</div>
-  </div>
-  <h6 class="sub">Bootstrap</h6>
-  <div class="progress" style="height:30px">
-    <div class=" progress-bar progress-bar-striped progress-bar-animated" style=" width:55%" id="boot">55%</div>
-  </div>
-   <h6 class="sub">JS/jquery</h6>
-  <div class="progress" style="height:30px">
-    <div class=" progress-bar progress-bar-striped progress-bar-animated" style=" width:30%" id="js">30%</div>
-  </div>
-   <h6 class="sub">mysql</h6>
-  <div class="progress" style="height:30px">
-    <div class=" progress-bar progress-bar-striped progress-bar-animated" style=" width:60%" id="sql">60%</div>
-  </div>
-</div>
-</div>
-<p class="skil">With all these skills I can convert UI designs into a beautiful website using HTML CSS and Bootstrap.I enjoy turning complex problems into beautiful designs.When I'm not coading you'll find me learning JAVASCRIPT.</p>
-    </div>
-    </section>
+    </footer>
 
 
+    <!--  Jquery js file  -->
+    <script src="./js/jquery.3.4.1.js"></script>
 
-</div>
-  <div class="parallax2">
-    <div class="heading-sm">
-    timeline
-    </div>
-  </div>
-<div class="timeline" id="timer">
-    
-    <div class="row">
-    <div class="col">
-      <div class="hexagonleft">
-        <div class="hexagon-inside">
-          <div class="hexagon-image1">
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col timerigt">
-      <p class="timerigt"><h1>10th</h1><h5>Rani Laxmi Bai School sec-14 Lucknow</h5> School life upto 10th was more sort of more fun and less learning.Still I managed to get 8.8 cgpa in my exams.</p>
-    </div>
-  </div>
-  <br>
-  <br>
+    <!--  Bootstrap js file  -->
+    <script src="./js/bootstrap.min.js"></script>
 
-  <div class="row">
-    <div class="col timeleft">
-      <p class="timeleft"><h1>12th</h1><h5>Rani Laxmi Bai School sec-14 Lucknow</h5>Completed my 12th standard from C.B.S.E board in 2016 under the science branch and I have got 73.6% in my 12th standard.</p>
-    </div>
-    <div class="col">
-      <div class="hexagonrigt">
-        <div class="hexagon-inside2">
-          <div class="hexagon-image2">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <br>
-  <br>
+    <!--  isotope js library  -->
+    <script src="./vendor/isotope/isotope.min.js"></script>
 
-  <div class="row">
-    <div class="col">
-     <div class="hexagonleft">
-        <div class="hexagon-inside">
-          <div class="hexagon-image3">
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col timerigt">
-      <p class="timerigt"><h1>B.C.A</h1><h5>IIMT group of colleges Gr. Noida | under CCSU</h5> I have completed my gradution from IIMT group of colleges with 67.5% marks.And now I am moving towards my goals to be a best developer.</p>
-    </div>
-  </div>
-  <br>
-  <br>
+    <!--  Magnific popup script file  -->
+    <script src="./vendor/Magnific-Popup/dist/jquery.magnific-popup.min.js"></script>
 
-  <div class="row">
-    <div class="col timelefts">
-      <h1 class="timelefts">To be continued...</h1>
-    </div>
-    <div class="col">
-      <div class="hexagonrigts">
-        <div class="hexagon-inside2">
-          <div class="hexagon-image3">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+    <!--  Owl-carousel js file  -->
+    <script src="./vendor/owl-carousel/js/owl.carousel.min.js"></script>
 
- 
-  <div class="parallax3">
-     <div class="heading-sm">
-      interest
-  </div>
-</div>
-<section class="white" id="interest">
-  <h1 style="padding-top: 100px;">Photography</h1>
-   
-    <div class="gallary">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-          <div class="imagebox first">
-            <img src="img/12.jpg" class="img-responsive">
-            <h3>Leaf</h3>
-           <a href="http://www.shutterstock.com/g/Utkarsh+rathore?rid=204859585"><img src="img/shutterstock-logo.png">
-          </a>
-          
-        </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-          <div class="imagebox second">
-            <img src="img/13.jpg" class="img-responsive">
-            <h3>Flowers</h3>
-             <a href="http://www.shutterstock.com/g/Utkarsh+rathore?rid=204859585"><img src="img/shutterstock-logo.png">
-          </a>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-          <div class="imagebox third">
-            <img src="img/14.jpg" class="img-responsive">
-            <h3>Water drops</h3>
-            <a href="http://www.shutterstock.com/g/Utkarsh+rathore?rid=204859585"><img src="img/shutterstock-logo.png">
-          </a>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-          <div class="imagebox fourth">
-            <img src="img/15.jpg" class="img-responsive">
-            <h3>Block</h3>
-             <a href="http://www.shutterstock.com/g/Utkarsh+rathore?rid=204859585"><img src="img/shutterstock-logo.png">
-          </a>
-          </div>
-        </div>
-    </div>
-  </div>
-</div>
-
-  </section>
-  
-
-  <div class="parallax4">
-     <div class="heading-sm">
-      contact me
-  </div>
-</div>
-    <div id ="contact">
-      <h5 style="color: #666;padding-top: 40px;">Have a question or want to work together?</h5><br>
-    <div class="container-fluid2">
-      <div class="row">
-        <div class="col-sm-4 col-md-4 col-xs-12"></div>
-        <div class="col-sm-4 col-md-4 col-xs-12">
-          <form id=nam>
-          <div class="form-group">
-            <input type="name" class="form-control" placeholder="name">
-      </div>
-        <div class="form-group">
-            <input type="email" class="form-control" placeholder="email">
-      </div>
-      <div class="form-group">
-            <input type="message" class="form-control1" placeholder="message">
-      </div>
-      <button type="submit" style="background-color:#333333"  class="btn btn-success">submit</button>  
-    </form>
-    <div class="col-sm-4 col-md-4 col-xs-12"></div>
-    </div>   
-</div>
-</div>
-</div>
-<section id="foot">
-<footer class="container-fluid text-center" style="background-color:#262626">
-  <a href="#myPage" title="To Top">
-    <i class="fa fa-chevron-up" style="font-size:48px;color: #d9d9d9"></i>
-  </a>
-  <h5 style="color:#d9d9d9
-">Utkarsh Singh@2019</h5>
-</footer>
-</section>
-
-  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
- <script src="https://unpkg.com/scrollreveal"></script>
-  <script>
-     ScrollReveal().reveal('nav',{
-      duration:1000,
-      origin:'bottom',
-      easing:'ease-in'
-    })
-    ScrollReveal().reveal('.heading',{
-      duration:1000,
-      origin:'left',
-      easing:'ease-in'
-      
-    })
-    ScrollReveal().reveal('.heading2',{
-      duration:1000,
-      delay:500,
-     easing:'ease-in',
-        scale: 0.9
-    })
-
-    ScrollReveal().reveal('.there h1',{
-      duration:2000,
-      origin:'left',
-      distance:'400px',
-      delay:200,
-
-    })
-
-    ScrollReveal().reveal('.prof1',{
-      duration:2000,
-      origin:'bottom',
-      distance:'70px',
-      delay:400,
-      easing:'ease-in'
-    })
-
-     ScrollReveal().reveal('.hexagon',{
-    rotate: {
-        x: 100,
-        y:  50,
-        z: 20
-    },
-       duration:2000,
-       delay:800
-    })
-      
-      ScrollReveal().reveal('.prof',{
-      duration:2000,
-     easing:'ease-in',
-      delay:200,
-      origin:'bottom',
-      distance:'20px'
-    })
-
-     ScrollReveal().reveal('.there h3',{
-      duration:2000,
-      delay:400,
-      origin:'bottom',
-      distance:'70px',
-      easing:'ease-in'
-
-    })
-
-     ScrollReveal().reveal('.skills',{
-      duration:2000,
-      origin:'right',
-      distance:'100px',
-    })
-
-     ScrollReveal().reveal('.skil',{
-      duration:2000,
-      easing:'ease-in',
-       delay:200,
-       origin:'bottom',
-      distance:'20px'
-    })
-    
-
-     ScrollReveal().reveal('.heading-sm',{
-      duration:2000,
-      origin:'left',
-      distance:'400px',
-      delay:200
-    })
-    
-
-     ScrollReveal().reveal('.hexagonleft',{
-      duration:2000,
-      origin:'right',
-      distance:'100px',
-    rotate: {
-        x: 500,
-        y:  50,
-        z: 20
-    },
-      delay:200
-    })
-    
-
-     ScrollReveal().reveal('.timeleftt',{
-      duration:2000,
-      origin:'bottom',
-      distance:'200px',
-      delay:200
-    })
-    
-
-     ScrollReveal().reveal('.hexagonrigt',{
-      duration:2000,
-      origin:'left',
-      distance:'100px',
-    rotate: {
-        x: 500,
-        y:  50,
-        z: 500
-    },
-      delay:200
-    })
-    
-     ScrollReveal().reveal('.timerigtt',{
-      duration:2000,
-      origin:'bottom',
-      distance:'200px',
-      delay:200
-    })
-    
-     ScrollReveal().reveal('.timeleftts',{
-      duration:2000,
-      origin:'bottom',
-      distance:'100px',
-      delay:200
-    })
-    
-     ScrollReveal().reveal('.white h1',{
-      duration:2000,
-      easing: 'ease-in-out'
-    })
-    
-
-     ScrollReveal().reveal('.first',{
-      duration:2000,
-      origin:'bottom',
-      distance:'100px',
-      delay:100
-    })
-
-     ScrollReveal().reveal('.second',{
-      duration:2000,
-      origin:'bottom',
-      distance:'100px',
-      delay:400
-    })
-
-     ScrollReveal().reveal('.third',{
-      duration:2000,
-      origin:'bottom',
-      distance:'100px',
-      delay:700
-    })
-
-     ScrollReveal().reveal('.fourth',{
-      duration:2000,
-      origin:'bottom',
-      distance:'100px',
-      delay:1000
-    })
+    <!--  custom js file  -->
+    <script src="./js/main.js"></script>
 
 
-     ScrollReveal().reveal('#contact h5',{
-      duration:2000,
-      easing:'ease-in',
-      origin:'bottom',
-      distance:'10px',
-      delay:200
-    })
-
-     ScrollReveal().reveal('form',{
-      duration:2000,
-      delay:100,
-      scale:1.2
-    })
-
-  </script>
 </body>
+
 </html>
